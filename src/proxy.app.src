@@ -1,0 +1,18 @@
+{application, proxy,
+ [
+  {description, "proxy hooks"},
+  {vsn, git},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  logger,
+                  hooks
+                 ]},
+  {mod, { proxy, []}},
+  {env, [
+    {weight, 0},
+    {protocol, []},
+    {port, []}
+  ]}
+ ]}.
